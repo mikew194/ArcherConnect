@@ -1,0 +1,61 @@
+{
+  "title": "Advanced Search Configuration object",
+  "searchTypeKey ": "Claimant",
+
+  "searchFieldGroup": [
+    {
+      "fieldKey": "FirstName", //Field Key must be unique.
+      "searchField": "FirstName", //The field that the API will search by
+      "label": "First Name", //The label that appears in the drop down.
+      "toolTip": "Search by the Claimant's First name", //Tooltip.  Do we need a tooltip.
+      "type": "string", //The type of field.
+      "inputType": "input", //The input control type.   TextBox, CheckBox, DatePicker, DropDown, MultiSelect, Customer
+      "validationOptions": { //Validation of inputs
+        "max": 99999,
+        "min": 0,
+        "pattern": "\\d{5}"
+      },
+      "searchOperators": [ //List of operators that can appear in the drop down.
+        {
+          "Operator": "Contains"
+        },
+        {
+          "Operator": "Starts With"
+        },
+        {
+          "Operator": "Ends With"
+        },
+        {
+          "Operator": "Equals"
+        }
+      ]
+    },
+    {
+      "fieldKey": "DOB", //Field Key must be unique.
+      "searchField": "DOB", //The field that the API will search by
+      "label": "Date Of Birth", //The label that appears in the drop down.
+      "toolTip": "Search by the Claimant's Date of Birth", //Tooltip.  Do we need a tooltip.
+      "type": "string", //The type of field.
+      "inputType": "input", //The input control type.   TextBox, CheckBox, DatePicker, DropDown, MultiSelect, Customer
+      "validationOptions": { //Validation of inputs
+        "max": 99999,
+        "min": 0,
+        "pattern": "\\d{5}"
+      },
+      "searchOperators": [ //List of operators that can appear in the drop down.
+        {
+          "Operator": "Equals"
+        },
+        {
+          "Operator": "Less than"
+        },
+        {
+          "Operator": "Greater than"
+        },
+        {
+          "Operator": "Betweens" //Betweens is a special case that shows a from an to date fields.
+        }
+      ]
+    }
+  ]
+}

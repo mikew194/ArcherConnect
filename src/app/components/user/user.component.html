@@ -1,0 +1,12 @@
+<div class="container">
+  <button (click)="add()">Dynamically Add Component</button>
+  <!-- <app-search (groupFilters)="filters = $event"></app-search> -->
+  <div #container></div>
+  <br/>
+  <h1>List of Users</h1>
+  <hr/>
+  <br/>
+  <app-user-list [groupFilters]="filters" [searchByKeyword]="searchText"></app-user-list>
+</div>
+
+

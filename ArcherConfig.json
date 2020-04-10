@@ -1,0 +1,60 @@
+{
+  "title": "Advanced Search Configuration object",
+  "searchTypeKey ": "Claimant",
+  "searchFieldGroup": [
+    {
+      "fieldKey": "FirstName",
+      "searchField": "FirstName",
+      "label": "First Name",
+      "toolTip": "Search by the Claimant's First name",
+      "type": "string",
+      "inputType": "input",
+      "validationOptions": {
+        "max": 99999,
+        "min": 0,
+        "pattern": "\\d{5}"
+      },
+      "searchOperators": [
+        {
+          "Operator": "Contains"
+        },
+        {
+          "Operator": "Starts With"
+        },
+        {
+          "Operator": "Ends With"
+        },
+        {
+          "Operator": "Equals"
+        }
+      ]
+    },
+    {
+      "fieldKey": "DOB",
+      "searchField": "DOB",
+      "label": "Date Of Birth",
+      "toolTip": "Search by the Claimant's Date of Birth",
+      "type": "string",
+      "inputType": "input",
+      "validationOptions": {
+        "max": 99999,
+        "min": 0,
+        "pattern": "\\d{5}"
+      },
+      "searchOperators": [
+        {
+          "Operator": "Equals"
+        },
+        {
+          "Operator": "Less than"
+        },
+        {
+          "Operator": "Greater than"
+        },
+        {
+          "Operator": "Betweens"
+        }
+      ]
+    }
+  ]
+}
